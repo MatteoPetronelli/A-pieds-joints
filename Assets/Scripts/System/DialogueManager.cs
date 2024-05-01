@@ -7,9 +7,11 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
     public Animator animator;
+    public Animator generique;
     public Text dialogueText;
     private Queue<string> sentences;
     public GameObject Coach;
+    public  GameObject generiquePanel;
 
     private void Awake()
     {
@@ -60,6 +62,11 @@ public class DialogueManager : MonoBehaviour
         if (LvlChoiceManager.instance.idTableaux == 0)
         {
             Controller.instance.startPanel.SetActive(true);
+        }
+        if (LvlChoiceManager.instance.idTableaux == 3)
+        {
+            generiquePanel.SetActive(true);
+            animator.SetBool("isEnd", true);
         }
         Coach.SetActive(false);
     }
