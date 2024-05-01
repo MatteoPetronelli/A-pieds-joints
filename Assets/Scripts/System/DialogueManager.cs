@@ -66,7 +66,7 @@ public class DialogueManager : MonoBehaviour
         if (LvlChoiceManager.instance.idTableaux == 3)
         {
             generiquePanel.SetActive(true);
-            animator.SetBool("isEnd", true);
+            generique.SetBool("isEnd", true);
         }
         Coach.SetActive(false);
     }

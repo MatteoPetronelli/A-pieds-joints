@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &16106845 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9056908569354397620, guid: 0a1b625626c29dc419f389c427a19e1a, type: 3}
+  m_PrefabInstance: {fileID: 8359496548167290406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &281548187 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4471900133813097989, guid: 0a1b625626c29dc419f389c427a19e1a, type: 3}
@@ -406,9 +411,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 699352215}
     - target: {fileID: 4250541740198121180, guid: bf9a0087a46288043b97fab4ad03b51a, type: 3}
+      propertyPath: generique
+      value: 
+      objectReference: {fileID: 16106845}
+    - target: {fileID: 4250541740198121180, guid: bf9a0087a46288043b97fab4ad03b51a, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1741052788}
+    - target: {fileID: 4250541740198121180, guid: bf9a0087a46288043b97fab4ad03b51a, type: 3}
+      propertyPath: generiquePanel
+      value: 
+      objectReference: {fileID: 1789712789}
     - target: {fileID: 4281933729695813697, guid: bf9a0087a46288043b97fab4ad03b51a, type: 3}
       propertyPath: timerUI
       value: 
@@ -508,6 +521,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1476c4c672ecaa243b0a10d5d74c0327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1789712789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1591979452169959837, guid: 0a1b625626c29dc419f389c427a19e1a, type: 3}
+  m_PrefabInstance: {fileID: 8359496548167290406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1854856225 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4250541740198121180, guid: bf9a0087a46288043b97fab4ad03b51a, type: 3}
