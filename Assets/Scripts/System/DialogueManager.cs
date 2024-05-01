@@ -55,7 +55,6 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        Debug.Log("Fin du dialogue");
         animator.SetBool("isOpen", false);
         DialogueTrigger.instance.isInDialogue = false;
         if (LvlChoiceManager.instance.idTableaux == 0)

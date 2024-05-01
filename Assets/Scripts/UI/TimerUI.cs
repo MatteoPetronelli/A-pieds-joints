@@ -17,10 +17,6 @@ public class TimerUI : MonoBehaviour
         instance = this;
         instance.enabled = false;
     }
-    void Start()
-    {
-        StartCoroutine(Timer());
-    }
     void Update()
     {
         TimerUIRefresh();

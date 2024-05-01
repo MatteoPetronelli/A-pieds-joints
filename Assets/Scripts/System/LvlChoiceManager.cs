@@ -19,19 +19,16 @@ public class LvlChoiceManager : MonoBehaviour
 
     void Update()
     {
-        if (idTableaux != 0)
+        SetBackground(idTableaux);
+        if (idTableaux == 2)
         {
-            SetBackground(idTableaux - 1);
-            if (idTableaux == 2)
-            {
-                hitboxes[0].SetActive(true);
-                hitboxes[1].SetActive(true);
-            }
-            if (idTableaux == 3)
-            {
-                hitboxes[0].SetActive(false);
-                hitboxes[1].SetActive(false);
-            }
+            hitboxes[0].SetActive(true);
+            hitboxes[1].SetActive(true);
+        }
+        if (idTableaux == 3)
+        {
+            hitboxes[0].SetActive(false);
+            hitboxes[1].SetActive(false);
         }
         Tableaux();
     }

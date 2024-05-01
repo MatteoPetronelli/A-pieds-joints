@@ -69,6 +69,7 @@ MonoBehaviour:
   - {fileID: 0}
   BackgroundUI: {fileID: 0}
   Backgrounds:
+  - {fileID: 21300000, guid: f395308c07a62c544a1b74dd87afb71f, type: 3}
   - {fileID: 21300000, guid: 80742f48aac998a459b0861affd2a368, type: 3}
   - {fileID: 21300000, guid: b0b4719548281e648add06857bbe5f19, type: 3}
   - {fileID: 21300000, guid: 3aad9d421c6cb2d4d8d90ade1d345509, type: 3}

@@ -25,7 +25,8 @@ public class PauseMenu : MonoBehaviour
 
     void Paused(){
         TimerUI.instance.enabled = false;
-        MalusManage.instance.enabled = false;
+        if (Controller.instance.malus.activeSelf)
+            MalusManage.instance.enabled = false;
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0;
         GameIsPaused = true;
@@ -33,7 +34,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume(){
         TimerUI.instance.enabled = true;
-        MalusManage.instance.enabled = true;
+        if (Controller.instance.malus.activeSelf)
+            MalusManage.instance.enabled = true;
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1;
         GameIsPaused = false;
